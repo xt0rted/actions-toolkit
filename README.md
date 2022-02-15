@@ -1,5 +1,8 @@
 # actions-toolkit
 
+[![CI](https://github.com/xt0rted/actions-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/xt0rted/actions-toolkit/actions/workflows/ci.yml)
+[![npm (scoped)](https://img.shields.io/npm/v/@xt0rted/actions-toolkit)](https://www.npmjs.com/package/@xt0rted/actions-toolkit)
+
 Helper functions, scripts, and Typescript types for working with GitHub Actions.
 
 ## Scripts

@@ -21,7 +21,9 @@
   ],
   "types": "./types/*.d.ts",
   "scripts": {
-    "build:cli": "ncc build src/cli.ts -o bin"
+    "build": "npm run build:cli",
+    "build:cli": "ncc build src/cli.ts -o bin",
+    "test": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
