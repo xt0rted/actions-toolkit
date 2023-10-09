@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.6",
-    "@types/node": "^20.8.0",
+    "@types/node": "^20.8.3",
     "@vercel/ncc": "^0.38.0",
     "js-yaml": "^4.1.0",
     "tslib": "^2.6.2",
