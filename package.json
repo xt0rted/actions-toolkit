@@ -22,7 +22,7 @@
     "bin/*",
     "types/*"
   ],
-  "types": "./types/*.d.ts",
+  "types": "./types/action-yml.d.ts",
   "scripts": {
     "build": "npm run build:cli",
     "build:cli": "ncc build src/cli.ts -o bin",
