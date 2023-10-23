@@ -29,7 +29,7 @@
     "test": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.7",
+    "@types/js-yaml": "^4.0.8",
     "@types/node": "^20.8.6",
     "@vercel/ncc": "^0.38.0",
     "js-yaml": "^4.1.0",
