@@ -2,18 +2,18 @@ import {
   readFile,
   writeFile,
 } from "node:fs/promises";
-import { resolve } from "node:path";
+import path from "node:path";
 
 import { load as yamlLoad } from "js-yaml";
 
 import type { ActionDefinition } from "../../types/action-yml";
 
-export default async function (includeExample = false) {
+export default async function updateReadme(includeExample = false) {
   const url = await urlFromPackageJson();
   const name = actionName(url);
 
   const fileContents = await readFile(
-    resolve("./action.yml"),
+    path.resolve("./action.yml"),
     { encoding: "utf8" },
   );
   const definition = yamlLoad(fileContents) as ActionDefinition;
@@ -27,12 +27,12 @@ export default async function (includeExample = false) {
   const inputs = [...buildInputsTable(definition)].join("\n");
   const outputs = [...buildOutputsTable(definition)].join("\n");
 
-  await updateReadme(example, inputs, outputs);
+  await updateFile(example, inputs, outputs);
 }
 
 async function urlFromPackageJson(): Promise<string> {
   const packageJson = await readFile(
-    resolve("./package.json"),
+    path.resolve("./package.json"),
     { encoding: "utf8" },
   );
 
@@ -137,8 +137,8 @@ function* buildOutputsTable(definition: ActionDefinition): Iterable<string> {
   }
 }
 
-async function updateReadme(example: string | undefined, inputs: string, outputs: string) {
-  const readme = resolve("./README.md");
+async function updateFile(example: string | undefined, inputs: string, outputs: string) {
+  const readme = path.resolve("./README.md");
   const fileContents = await readFile(
     readme,
     { encoding: "utf8" },

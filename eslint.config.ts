@@ -192,6 +192,7 @@ export default tsEslint.config(
         "error",
         "never",
       ],
+      "unicorn/prevent-abbreviations": ["error", { allowList: { pkg: true } }],
     },
   },
   {
