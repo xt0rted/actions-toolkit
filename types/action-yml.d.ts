@@ -274,6 +274,7 @@ export type BrandingIcon =
 export type SupportedNodeVersions =
   | "node12"
   | "node16"
+  | "node20"
   ;
 
 export interface ActionDefinition {
