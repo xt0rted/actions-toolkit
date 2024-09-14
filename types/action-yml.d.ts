@@ -332,5 +332,5 @@ export interface ActionOutput {
    * An example of the output value.
    * This is only used by the `update-readme` tool in this package.
    */
-  _example: string;
+  _example?: string;
 }
