@@ -1,7 +1,7 @@
 # actions-toolkit
 
 [![CI](https://github.com/xt0rted/actions-toolkit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/xt0rted/actions-toolkit/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/xt0rted/actions-toolkit/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/xt0rted/actions-toolkitc/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/xt0rted/actions-toolkit/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/xt0rted/actions-toolkit/actions/workflows/codeql-analysis.yml)
 [![npm](https://img.shields.io/npm/v/@xt0rted/actions-toolkit)](https://www.npmjs.com/package/@xt0rted/actions-toolkit)
 
 Helper functions, scripts, and Typescript types for working with GitHub Actions.
