@@ -1,5 +1,6 @@
 {
   "name": "@xt0rted/actions-toolkit",
+  "type": "module",
   "version": "0.0.1",
   "description": "Helper functions, scripts, and Typescript types for working with GitHub Actions",
   "author": "xt0rted",
@@ -26,14 +27,23 @@
   "scripts": {
     "build": "npm run build:cli",
     "build:cli": "ncc build src/cli.ts -o bin",
+    "eslint": "eslint --flag unstable_ts_config",
+    "eslint:fix": "npm run eslint -- --fix",
     "test": "tsc --noEmit"
   },
   "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint__js": "^8.42.3",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.5.4",
     "@vercel/ncc": "^0.38.1",
+    "eslint": "^9.10.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "jiti": "^1.21.6",
     "js-yaml": "^4.1.0",
     "tslib": "^2.7.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.5.0"
   }
 }
