@@ -1,7 +1,7 @@
 {
   "name": "@xt0rted/actions-toolkit",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Helper functions, scripts, and Typescript types for working with GitHub Actions",
   "author": "xt0rted",
   "license": "MIT",

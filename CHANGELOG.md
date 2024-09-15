@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## [1.0.0](https://github.com/xt0rted/actions-toolkit/compare/v0.0.1...v1.0.0) - 2024-09-14
+
 - Added `node20` to `SupportedNodeVersions`
 - Updated `_example` to be optional on `ActionOutput`
 - Fixed types reference in `package.json`
