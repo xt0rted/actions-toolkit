@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/xt0rted/actions-toolkit#readme",
   "bin": {
-    "actions-toolkit": "./bin/index.js"
+    "actions-toolkit": "bin/index.js"
   },
   "files": [
     "bin/*",
@@ -26,7 +26,7 @@
   "types": "./types/action-yml.d.ts",
   "scripts": {
     "build": "npm run build:cli",
-    "build:cli": "ncc build src/cli.ts -o bin",
+    "build:cli": "ncc build src/cli.ts -s -o bin",
     "eslint": "eslint --flag unstable_ts_config",
     "eslint:fix": "npm run eslint -- --fix",
     "test": "tsc --noEmit"
