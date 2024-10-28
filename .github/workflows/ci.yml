@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4.2.2
 
       - name: Install Node
         uses: actions/setup-node@v4.0.4
@@ -48,7 +48,7 @@ jobs:
 
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4.2.2
 
       - name: Install Node
         uses: actions/setup-node@v4.0.4
