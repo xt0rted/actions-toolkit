@@ -38,7 +38,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.13.8",
     "@vercel/ncc": "^0.38.3",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "jiti": "^2.4.2",
     "js-yaml": "^4.1.0",
